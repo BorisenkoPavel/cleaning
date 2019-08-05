@@ -1,0 +1,125 @@
+.btn
+	background-image: linear-gradient(-251deg, #3250c8 0%, #20ca46 100%)
+	border-radius: 35px
+	padding: 1.25rem 5.625rem
+	font-weight: 500
+	font-family: Roboto
+	border: none
+
+.main-slider-pagination.swiper-pagination-bullets
+	top: 0
+	bottom: auto!important
+	display: flex
+	justify-content: space-evenly
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		width: 75%
+		height: 1px
+		border-bottom: 1px dashed #c5c5c5
+		z-index: -2
+	.swiper-pagination-bullet 
+		width: 6.875rem
+		height: 3.4375rem
+		text-align: center
+		line-height: 20px
+		font-size: 12px
+		opacity: 1
+		font-size: 34px
+		color: #fff
+		font-family: $h-font
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		padding: 5px 10px
+		position: relative
+		border-radius: 0
+		background-color: transparent
+		&:before 
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			background-color: #90d39f
+			transform: skew(170deg)
+			z-index: -1
+			transition: .3s ease
+
+	.swiper-pagination-bullet-active 
+		&:before
+			opacity: 1
+			background-color: $accent
+
+.swiper-button-container
+	height: 90px
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 15%
+	display: flex
+	justify-content: space-between
+.main-slider-next, .main-slider-prev
+	background-image: none
+	width: auto
+	height: auto
+	display: flex
+	flex-direction: column
+	font-size: 14px
+	color: grey
+	margin: 0
+	bottom: 0
+	top: auto
+	i
+		margin-bottom: 20px
+.swiper-count
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	font-size: 125px
+	opacity: 0.15
+	font-family: $h-font
+	font-weight: bold
+	line-height: .7
+	display: flex
+	justify-content: center
+
+.swiper-before-after-prev, .swiper-before-after-next
+	background-color: #2d4191
+	width: 72px
+	height: 72px
+	border: 8px solid #ffffff
+	border-radius: 50%
+	bottom: 0
+	top: 9rem
+	margin: auto
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #fff
+	background-image: none
+	i
+		font-size: 30px
+.swiper-before-after-prev
+	left: 7%
+.swiper-before-after-next
+	right: 7%
+
+.swiper-pagination.swiper-before-after-pagination
+	display: flex
+	justify-content: center
+	left: 0
+	right: 0
+	.swiper-pagination-bullet 
+		background-color: $accent
+		width: 13px
+		height: 13px
+		margin: 0 15px

@@ -1,0 +1,169 @@
+@import start
+.section-banner
+	background-image: url(../img/content/banner.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	padding: 1.5625rem 0
+.banner-container
+	display: grid
+	grid-template-columns: auto 505px
+.banner-subtitle
+	font-size: 1.5625rem
+	font-weight: 500
+.banner-text
+	padding-top: 12%
+form
+	font-family: Gilroy
+	font-weight: 500
+input.form-control
+	box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.03)
+	height: calc(2.8em + 0.75rem + 2px)
+	border-radius: 6px
+	background-color: #f7f7f7
+	text-align: left
+textarea.form-control
+	background-color: #f7f7f7
+	box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.03)
+.form-block
+	padding: 2.5rem 3.125rem
+	background-color: #fff
+	border-radius: 10px
+	box-shadow: 0 3px 20px 4px rgba(0, 0, 0, 0.07)
+.form-title
+	font-size: 1.6875rem
+	font-weight: bold
+	line-height: 2.375rem
+.form-group 
+	margin-bottom: 1.3rem
+.form-header
+	opacity: 0.8
+	font-size: 16px
+.form-footer
+	opacity: 0.8
+	font-size: 0.875rem
+
+.section-cleaning
+	background-image: url(../img/content/cleaning.jpg)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	padding: 4.375rem 0 12.5rem
+.title-question
+	font-size: 1.875rem
+	font-weight: bold
+.text-accent-big
+	font-size: 1.5625rem
+	font-weight: bold
+	color: $accent
+
+.section-slider
+	padding-top: 6.25rem
+.slide-photo
+	background-size: contain
+	background-position: center
+	background-repeat: no-repeat
+.swiper-container
+	padding-top: 5rem
+
+
+.section-unlimited
+	padding-top: 9.375rem
+	background-image: url(../img/content/bg-opacity.png)
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	padding-bottom: 15.625rem
+
+.section-catalog
+	padding-bottom: 70px
+.gallery-item
+	margin-bottom: 1.5625rem
+	&:hover
+		.gallery-item__photo
+			transform: scale(1.1)
+	a.embed-responsive-item
+		border-radius: 10px
+		overflow: hidden
+	&__photo
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		cursor: zoom-in
+		transition: .3s ease
+	&__title
+		text-align: center
+		margin-top: 10px
+.gallery-item__text-desc
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	font-style: italic
+	font-weight: bold
+.gallery-item--no-photo
+		box-shadow: 0 3px 20px 4px rgba(0, 0, 0, 0.07)
+		border-radius: 10px
+
+.section-catalog2
+	background-image: url(../img/content/bg-op2.png)
+	background-size: cover
+	background-position: top
+	background-repeat: no-repeat
+
+.section-before-after
+
+	.embed-responsive-item
+		height: 300px
+.twentytwenty-wrapper
+	transform: skew(175deg)
+	overflow: hidden
+	width: 80%
+	margin: auto
+	border-radius: 15px
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		left: 2%
+		top: 2%
+		width: 96%
+		height: 96%
+		border: 1px solid #ffffff
+		border-radius: 15px
+		z-index: 50
+		pointer-events: none
+.twentytwenty-container
+	background-color: #90d39f
+	transition: .3s ease
+	transform: skew(185deg)
+	position: relative
+	left: -2%
+	width: 104%
+	img
+		width: 100%
+		height: 450px
+.twentytwenty-before-label, .twentytwenty-after-label
+	display: none
+.twentytwenty-overlay
+	display: none
+
+.before-after__text
+	padding: 0 10%
+	font-size: 50px
+	font-family: $h-font
+	font-weight: bold
+	padding: 0.9375rem 0
+	span
+		background-image: linear-gradient(-251deg, #3250c8 0%, #20ca46 100%)
+		-webkit-background-clip: text
+		-webkit-text-fill-color: transparent
+
+.section-form
+	background-image: url(../img/content/popup-bg.png)
+	background-size: cover
+	background-position: top
+	background-repeat: no-repeat
+
+
+@import media
