@@ -30,7 +30,7 @@ var swiper = new Swiper('.main-slider', {
 	},
 });
 
-var swiper = new Swiper('.before-after-slider', {
+var BeforeSwiper = new Swiper('.before-after-slider', {
 	simulateTouch: false,
 	pagination: {
 		el: '.swiper-pagination.swiper-before-after-pagination',
@@ -40,6 +40,63 @@ var swiper = new Swiper('.before-after-slider', {
 		nextEl: '.swiper-button-next.swiper-before-after-next',
 		prevEl: '.swiper-button-prev.swiper-before-after-prev',
 	},
+
+});
+
+var slideCount = function() {
+	curSlide = $('.swiper-pagination-bullet-active').html()
+	$('.swiper-count').html(curSlide)
+}
+
+slideCount();
+
+swiper.on('slideChange', function () {
+  slideCount()
+});
+$(window).scroll(function () {
+	var offset = $('.section-garant').offset()
+	if ($(this).scrollTop() >= offset.top - 350) {
+		$('#num1').animate({
+			num: 10 - 0 /* - начало */
+		}, {
+			duration: 1500,
+			step: function (num) {
+				this.innerHTML = ((num + 0).toFixed())
+			}
+		});
+		$('#num2').animate({
+			num2: 1240 - 0 /* - начало */
+		}, {
+			duration: 1500,
+			step: function (num2) {
+				this.innerHTML = ((num2 + 0).toFixed())
+			}
+		});
+		$('#num3').animate({
+			num3: 24 - 0 /* - начало */
+		}, {
+			duration: 1500,
+			step: function (num3) {
+				this.innerHTML = ((num3 + 0).toFixed())
+			}
+		});
+		$('#num4').animate({
+			num4: 8 - 0 /* - начало */
+		}, {
+			duration: 1500,
+			step: function (num4) {
+				this.innerHTML = ((num4 + 0).toFixed())
+			}
+		});
+		$('#num5').animate({
+			num4: 10 - 0 /* - начало */
+		}, {
+			duration: 1500,
+			step: function (num4) {
+				this.innerHTML = ((num4 + 0).toFixed())
+			}
+		});
+	}
 });
 
 

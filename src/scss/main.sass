@@ -1,4 +1,23 @@
 @import start
+.link-phone:hover
+	.fas.fa-phone:after
+		background-color: $accent
+.fas.fa-phone
+	position: relative
+	font-size: 14px
+	color: #fff
+	&:after
+		content: ''
+		position: absolute
+		top: -9px
+		left: -9px
+		width: 32px
+		height: 32px
+		background-color: #2a3b80
+		border-radius: 50%
+		z-index: -1
+		transition: .3s ease
+
 .section-banner
 	background-image: url(../img/content/banner.jpg)
 	background-size: cover
@@ -68,12 +87,10 @@ textarea.form-control
 
 
 .section-unlimited
-	padding-top: 9.375rem
 	background-image: url(../img/content/bg-opacity.png)
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
-	padding-bottom: 15.625rem
 
 .section-catalog
 	padding-bottom: 70px
@@ -165,5 +182,100 @@ textarea.form-control
 	background-position: top
 	background-repeat: no-repeat
 
+.garant
+.animate-number
+	display: flex
+	flex-direction: column
+.about-num
+	font-weight: bold
+	display: flex
+	font-family: $h-font
+	justify-content: center
+	align-items: flex-end
+.about-num.pr-5, .about-num.pr-0
+	.about-num__desc
+		right: 0
+.about-num__desc
+	transform: rotate(-90deg)
+	transform-origin: -10px
+	display: inline-block
+	font-size: 32px
+	position: absolute
+	right: 40px
+	white-space: nowrap
+	width: 10px
+span.calc__text-small
+	font-size: 1.9375rem
+	background-image: linear-gradient(-251deg, #3250c8 0%, #20ca46 100%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	line-height: 2.6
+	position: relative
+	// left: .8rem
+	
+.about-text
+	height: 4.375rem
+	text-align: center
+	font-weight: bold
+	font-size: 1.0625rem
+.calc
+	font-size: 160px
+	line-height: 1
+	background-image: linear-gradient(-251deg, #3250c8 0%, #20ca46 100%)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent
+	white-space: nowrap
 
+
+.company-list
+	.company-item
+	.company-item
+		position: relative
+		padding-bottom: 30px
+		&__photo.company-item__photo--long
+			background-size: auto 70%
+		&__photo
+			background-size: 60%
+			background-position: center
+			background-repeat: no-repeat
+		&:after
+			content: ''
+			box-shadow: 0 3px 20px 4px rgba(0, 0, 0, 0.07)
+			width: 100%
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 30px
+			transform: skew(160deg)
+
+.steps-block
+	display: grid
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+.step-item__icon
+	display: flex
+	align-items: flex-end
+	justify-content: center
+	min-height: 6.25rem
+	margin-bottom: 1.5rem
+
+.manager-block
+	position: relative
+	width: 85%
+	&:before
+		content: ''
+		position: absolute
+		box-shadow: 0 2px 18px 3px rgba(0, 0, 0, 0.07)
+		top: 0
+		left: 0
+		right: 0
+		margin: auto
+		height: 100%
+		transform: skew(160deg)
+.manager-block__position
+	font-size: 1.25rem
+.manager-block__name
+	font-size: 1.375rem
+
+footer
+	box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.11)
 @import media
