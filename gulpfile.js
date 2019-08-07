@@ -140,6 +140,18 @@ gulp.task('pug', () =>
 		});
 	})
 );
+gulp.task('pug:build', () =>
+	new Promise((resolve, reject) => {
+		emitty.scan(global.emittyChangedFile).then(() => {
+			gulp.src(['src/pug/*.pug', 'src/pug/pages/*.pug'])
+				.pipe(gulpif(global.watch, emitty.filter(global.emittyChangedFile)))
+				.pipe(pug({ pretty: false }))
+				.pipe(gulp.dest('build'))
+				.on('end', resolve)
+				.on('error', reject);
+		});
+	})
+);
 
 gulp.task('fonts', () => {
   return gulp.src('src/fonts/**/*.*')
@@ -187,13 +199,13 @@ gulp.task('img:build', () => {
           imagemin.jpegtran({progressive: true}),
           imageminJpegRecompress({
               loops: 4,
-              min: 70,
-              max: 80,
+              min: 80,
+              max: 90,
               quality: 'high'
           }),
           imagemin.svgo(),
           imagemin.optipng({optimizationLevel: 3}),
-          pngquant({quality: '65-70', speed: 5})
+          pngquant({quality: '75-80', speed: 5})
       ], {
           verbose: true
       })))
@@ -202,7 +214,7 @@ gulp.task('img:build', () => {
 
 gulp.task('build', gulp.series(
   'clean',
-  gulp.parallel('styles:build', 'scripts', 'fonts', 'pug','svg', 'img:build')
+  gulp.parallel('styles:build', 'scripts', 'fonts', 'pug:build','svg', 'img:build')
 ));
 
 if (gulpversion == 3) {

@@ -26,7 +26,8 @@
 	padding: 1.5625rem 0
 .banner-container
 	display: grid
-	grid-template-columns: auto 505px
+	grid-template-columns: auto 45%
+	grid-column-gap: 3.125rem
 .banner-subtitle
 	font-size: 1.5625rem
 	font-weight: 500
@@ -82,8 +83,8 @@ textarea.form-control
 	background-size: contain
 	background-position: center
 	background-repeat: no-repeat
-.swiper-container
-	padding-top: 5rem
+.main-slider
+	padding-top: 5rem!important
 
 
 .section-unlimited
@@ -186,22 +187,24 @@ textarea.form-control
 .animate-number
 	display: flex
 	flex-direction: column
+	align-items: center
 .about-num
 	font-weight: bold
 	display: flex
 	font-family: $h-font
 	justify-content: center
 	align-items: flex-end
-.about-num.pr-5, .about-num.pr-0
-	.about-num__desc
-		right: 0
+	position: relative
+// .about-num.pr-5, .about-num.pr-0
+// 	.about-num__desc
+// 		right: 0
 .about-num__desc
 	transform: rotate(-90deg)
 	transform-origin: -10px
 	display: inline-block
 	font-size: 32px
 	position: absolute
-	right: 40px
+	right: -2.5rem
 	white-space: nowrap
 	width: 10px
 span.calc__text-small

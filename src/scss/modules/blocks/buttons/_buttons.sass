@@ -40,6 +40,7 @@
 		position: relative
 		border-radius: 0
 		background-color: transparent
+		outline: none
 		&:before 
 			content: ''
 			position: absolute
@@ -76,6 +77,8 @@
 	margin: 0
 	bottom: 0
 	top: auto
+	z-index: 100
+	outline: none
 	i
 		margin-bottom: 20px
 .swiper-count
@@ -85,12 +88,13 @@
 	right: 0
 	margin: auto
 	font-size: 125px
-	opacity: 0.15
+	color: #e8e8e8
 	font-family: $h-font
 	font-weight: bold
 	line-height: .7
 	display: flex
 	justify-content: center
+	z-index: 50
 
 .swiper-before-after-prev, .swiper-before-after-next
 	background-color: #2d4191
@@ -98,14 +102,14 @@
 	height: 72px
 	border: 8px solid #ffffff
 	border-radius: 50%
-	bottom: 0
-	top: 9rem
+	bottom: 181px
 	margin: auto
 	display: flex
 	align-items: center
 	justify-content: center
 	color: #fff
 	background-image: none
+	outline: none
 	i
 		font-size: 30px
 .swiper-before-after-prev
@@ -118,8 +122,11 @@
 	justify-content: center
 	left: 0
 	right: 0
+	flex-wrap: wrap
 	.swiper-pagination-bullet 
 		background-color: $accent
 		width: 13px
 		height: 13px
 		margin: 0 15px
+		margin-bottom: 15px
+		outline: none

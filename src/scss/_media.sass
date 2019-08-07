@@ -1,5 +1,5 @@
 @import "vars"
-
+@import "_start"
 
 /*==========  Desktop First  ==========*/
 
@@ -8,16 +8,82 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-
+  .swiper-button-container
+    position: relative
 // ≥992px
 +media-breakpoint-down(md)
+  .banner-container
+    grid-template-columns: 1fr
+    grid-row-gap: 3rem
+  .main-slider
+    h3
+      br
+        display: none
+  .twentytwenty-container img
+    height: 350px
+  .swiper-before-after-prev, .swiper-before-after-next
+    bottom: 131px
+  .twentytwenty-wrapper
+    width: 90%
+  .twentytwenty-container
+    left: -3%
+    width: 106%
+  .steps-block
+    grid-template-columns: 1fr 1fr 1fr
+    grid-row-gap: 1.875rem
+  .swiper-before-after-prev
+	  left: 0%
+  .swiper-before-after-next
+  	right: 0%
+  section
+    padding: 3rem 0
+  .swiper-container
+	  padding-top: 2rem
+  .section-cleaning
+    padding: 3rem 0
+  .title-question
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font)
 
 // ≥768px
 +media-breakpoint-down(sm)
-
+  .twentytwenty-container img
+    height: 250px
+  .swiper-before-after-prev, .swiper-before-after-next
+    bottom: 81px
+  // .twentytwenty-wrapper
+  //   width: 90%
+  // .twentytwenty-container
+  //   left: -3%
+  //   width: 106%
 // ≥576px
 +media-breakpoint-down(xs)
-
+  .btn
+    padding: 0.95rem 3.625rem
+  .twentytwenty-container img
+    height: 200px
+  .swiper-before-after-prev
+	  left: -8px
+  .swiper-before-after-next
+  	right: -8px
+  .company-list .company-item
+    margin: auto
+    width: 80%
+  .steps-block
+    grid-template-columns: 1fr 1fr
+  .step-item:last-child
+    grid-column: 1/-1
+  .calc
+    font-size: 6.25rem
+  .about-num__desc
+    font-size: 1.375rem
+    transform-origin: 5px
+  .form-block
+    padding: 2rem
+  .fas.fa-phone
+    display: none
+  .swiper-container
+	  padding-top: 1.5rem
+  
 /*==========  mobile First  ==========*/
 
 // ≤576px
