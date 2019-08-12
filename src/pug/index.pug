@@ -13,6 +13,9 @@ block content
 				.form-title.mb-4 Бесплатная тестовая очистка 10 М2
 				form(action="")
 					.form-header.mb-5 Введите ваши данные и мы проведём бесплатную тестовую уборку
+					input(type='hidden' name='project_name' value='cleaning')
+					input(type='hidden' name='admin_email' value='moem174@mail.ru')
+					input(type='hidden' name='form_subject' value='contacts')
 					.form-group
 						input(type="text" class="form-control" placeholder="Введите ваше имя")
 					.form-group
@@ -111,49 +114,57 @@ block content
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (2).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							//- a.embed-responsive-item(href="img/content/item (2).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (2).jpg")')
 						.gallery-item__title Старая краска и лак
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (3).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							//- a.embed-responsive-item(href="img/content/item (3).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (3).jpg")')
 						.gallery-item__title Цементные пятна
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (6).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							//- a.embed-responsive-item(href="img/content/item (6).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (6).jpg")')
 						.gallery-item__title Накипь и нагар
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (4).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							//- a.embed-responsive-item(href="img/content/item (4).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (4).jpg")')
 						.gallery-item__title СОЖ, технические масла, прессовка
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (5).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							//- a.embed-responsive-item(href="img/content/item (5).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (5).jpg")')
 						.gallery-item__title Штукатурка
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (1).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							//- a.embed-responsive-item(href="img/content/item (1).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (1).jpg")')
 						.gallery-item__title Промышленные загрязнения
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (7).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							//- a.embed-responsive-item(href="img/content/item (7).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (7).jpg")')
 						.gallery-item__title Атмосферные загрязнения
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (8).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							//- a.embed-responsive-item(href="img/content/item (8).jpg" data-toggle='lightbox' data-gallery='gallery1')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (8).jpg")')
 						.gallery-item__title Сложные загрязнения на фасадах
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
@@ -167,73 +178,85 @@ block content
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (18).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (18).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (18).jpg")')
 						.gallery-item__title Очистка фасадов зданий
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (17).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (17).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (17).jpg")')
 						.gallery-item__title Очистка промышленных полов от масел и ГСМ
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (16).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (16).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (16).jpg")')
 						.gallery-item__title Очистка покрасочных камер
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (15).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (15).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (15).jpg")')
 						.gallery-item__title Очистка тротуарной плитки
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (14).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (14).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (14).jpg")')
 						.gallery-item__title Очистка крытых парковок, паркингов
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (13).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (13).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (13).jpg")')
 						.gallery-item__title Очистка брусчатки
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (12).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (12).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (12).jpg")')
 						.gallery-item__title Очистка трубопровода и канализации
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (11).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (11).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (11).jpg")')
 						.gallery-item__title Очистка спортивных покрытий
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (10).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (10).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (10).jpg")')
 						.gallery-item__title Очистка мусоропровода и дымоходам
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (9).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (9).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (9).jpg")')
 						.gallery-item__title Очистка крыш
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (20).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (20).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (20).jpg")')
 						.gallery-item__title Очистка стен от граффити
 				.col-md-6.col-lg-4(data-aos="fade-up" data-aos-duration="800")
 					.gallery-item
 						.embed-responsive.embed-responsive-21by9
-							a.embed-responsive-item(href="img/content/item (19).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							//- a.embed-responsive-item(href="img/content/item (19).jpg" data-toggle='lightbox' data-gallery='gallery2')
+							a.embed-responsive-item
 								.img-fluid.gallery-item__photo.h-100(style='background-image: url("img/content/item (19).jpg")')
 						.gallery-item__title Очистка детских и спортивных площадок
 	section.section-before-after
@@ -314,6 +337,9 @@ block content
 					.form-block.text-center
 						.form-title.mb-4 Слышим. Находим решение. Действуем!
 						form(action="")
+							input(type='hidden' name='project_name' value='cleaning')
+							input(type='hidden' name='admin_email' value='moem174@mail.ru')
+							input(type='hidden' name='form_subject' value='contacts')
 							.form-header.mb-5 Мы готовы приступить к работе в течение 12 часов. Просто озвучьте нам задачу и удобное время для визита наших специалистов
 							.form-group
 								input(type="text" class="form-control" placeholder="Введите ваше имя")
@@ -342,6 +368,9 @@ block content
 						.form-block.text-center(data-aos="fade-left" data-aos-duration="800" data-aos-anchor-placement="top-center")
 							.form-title.mb-4 Заказать расчёт сметы для предприятия
 							form(action="")
+								input(type='hidden' name='project_name' value='cleaning')
+								input(type='hidden' name='admin_email' value='moem174@mail.ru')
+								input(type='hidden' name='form_subject' value='contacts')
 								.form-header.mb-5 Введите ваши данные и вам перезвонит наш менеджер в течении 10 минут
 								.form-group
 									input(type="text" class="form-control" placeholder="Введите ваше имя")
@@ -386,35 +415,35 @@ block content
 				.col-sm-6.col-lg-3(data-aos="fade-up" data-aos-duration="800")
 					.company-item
 						.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (1).jpg")')
+							.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (1).jpg")')
 				.col-sm-6.col-lg-3(data-aos="fade-up" data-aos-duration="800")
 					.company-item
 						.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (2).jpg")')
+							.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (2).jpg")')
 				.col-sm-6.col-lg-3(data-aos="fade-up" data-aos-duration="800")
 					.company-item
 						.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (3).jpg")')
+							.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (3).jpg")')
 				.col-sm-6.col-lg-3(data-aos="fade-up" data-aos-duration="800")
 					.company-item
 						.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (5).png")')
+							.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (5).png")')
 				.col-sm-6.col-lg-3(data-aos="fade-up" data-aos-duration="800")
 					.company-item
 						.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item.company-item__photo.company-item__photo--long(style='background-image: url("img/content/partner (2).png")')
+							.embed-responsive-item.company-item__photo.company-item__photo--long(style='background-image: url("img/content/partner (2).png")')
 				.col-sm-6.col-lg-3(data-aos="fade-up" data-aos-duration="800")
 					.company-item
 						.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (3).png")')
+							.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (3).png")')
 				.col-sm-6.col-lg-3(data-aos="fade-up" data-aos-duration="800")
 					.company-item
 						.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (4).png")')
+							.embed-responsive-item.company-item__photo(style='background-image: url("img/content/partner (4).png")')
 				.col-sm-6.col-lg-3(data-aos="fade-up" data-aos-duration="800")
 					.company-item
 						.embed-responsive.embed-responsive-16by9
-									.embed-responsive-item.company-item__photo(style='background-image: url("img/content/gaz.png")')
+							.embed-responsive-item.company-item__photo(style='background-image: url("img/content/gaz.png")')
 	section.section-algaritm
 		.container
 			h2.text-center ГОТОВЫ НАЧАТЬ СОТРУДНИЧЕСТВО?
@@ -454,6 +483,9 @@ block content
 					.form-block.text-center
 						.form-title.mb-4 Оформить бесплатный звонок
 						form(action="")
+							input(type='hidden' name='project_name' value='cleaning')
+							input(type='hidden' name='admin_email' value='moem174@mail.ru')
+							input(type='hidden' name='form_subject' value='contacts')
 							.form-header.mb-5 Введите ваши данные и вам перезвонит наш менеджер в течении 10 минут
 							.form-group
 								input(type="text" class="form-control" placeholder="Введите ваше имя")

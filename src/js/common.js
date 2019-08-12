@@ -9,6 +9,25 @@ $(document).ready(function () {
 		$(this).ekkoLightbox();
 });
 
+$("form").submit(function() {
+  var th = $(this);
+  // /*modalSubmited();
+  //  console.log(th.serialize())
+  $.ajax({
+    type: "POST",
+    url: "mail.php", //Change
+    data: th.serialize()
+  }).done(function() {
+		$('#Modal').modal('hide')
+		$('#modal2').modal('show')
+    setTimeout(function() {
+      // Done Functions
+      th.trigger("reset");
+    }, 1000);
+  });
+  return false;
+});
+
 $(function(){
   $(".twentytwenty-container").twentytwenty({
 		before_label: 'До', // Set a custom before label
